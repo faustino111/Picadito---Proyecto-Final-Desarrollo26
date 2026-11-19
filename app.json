@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Picadito!",
+    "slug": "picadito-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#16a34a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Picadito! necesita acceder a tu ubicación para mostrarte las canchas de fútbol más cercanas."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#16a34a"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Picadito! necesita acceder a tu ubicación para mostrarte las canchas de fútbol más cercanas."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
